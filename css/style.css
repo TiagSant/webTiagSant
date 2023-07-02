@@ -1,0 +1,28 @@
+@font-face {
+   font-family: "Blue";
+   src: url("/fonts/Blue.ttf") format("truetype");
+}
+
+body {
+   padding: 0%;
+   margin: 0%;
+}
+
+.darkPurple {
+   color: #9D7DEA;
+   background-color: #2E053D;
+}
+
+.intro {
+   text-align: justify ;
+   padding: 10% 20% 10% 20%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+   margin: 0px;
+   font-family: "Blue";
+}
+
+p {
+   font-size: 1.2em;
+}
