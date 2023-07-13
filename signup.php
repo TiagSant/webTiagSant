@@ -1,6 +1,8 @@
 <?php
 //require "./config/config.php";
 //require str_replace($_SERVER['SERVER_NAME'], "", $_SERVER['DOCUMENT_ROOT']) . "/sites" . $_SERVER['SERVER_NAME'] . "config/config.php";
+include str_replace($_SERVER['SERVER_NAME'], "", $_SERVER['DOCUMENT_ROOT']) . "" . "/config/config.php";
+
 ?>
 
 <!DOCTYPE html>
