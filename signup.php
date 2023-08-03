@@ -1,7 +1,6 @@
 <?php
-//require "./config/config.php";
-//require str_replace($_SERVER['SERVER_NAME'], "", $_SERVER['DOCUMENT_ROOT']) . "/sites" . $_SERVER['SERVER_NAME'] . "config/config.php";
-include str_replace($_SERVER['SERVER_NAME'], "", $_SERVER['DOCUMENT_ROOT']) . "" . "/config/config.php";
+include "/config/config.php";
+//include str_replace($_SERVER['SERVER_NAME'], "", $_SERVER['DOCUMENT_ROOT']) . "" . "/config/config.php";
 
 ?>
 
@@ -15,12 +14,14 @@ include str_replace($_SERVER['SERVER_NAME'], "", $_SERVER['DOCUMENT_ROOT']) . ""
    <link rel="stylesheet" href="/css/global.css">
    <link rel="stylesheet" href="/css/signup.css">
 
+   <script src="/js/signup.js"></script>
+
 </head>
 <body class="darkPurple">
    <section class="signup">
       <div class="formSignup">
          <h1><?php echo _("Sign-up on TiagSant website") ?></h1>
-         <form action="" method="post">
+         <form action="/API/signupApi.php" method="post">
             <input type="text" name="name" id="name" placeholder="<?php echo _("Your name") ?>">
             <input type="text" name="fName" id="fName" placeholder="<?php echo _("Your last name") ?>">
             <input type="email" name="email" id="email" placeholder="<?php echo _("Your e-mail address") ?>">
